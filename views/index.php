@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Symfony DomCrawler CssSelector Component Testing</title>
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
 	<link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
@@ -24,20 +25,20 @@
 	<h2>Results - Count: <?php echo $view->resultCount; ?></h2>
 	<form class="pure-g pure-form">
 
-		<div class="pure-u-1-3">
+		<div class="pure-u-1 pure-u-md-1-3">
 			<p>Matched Text:<br>
 				<textarea class="pure-input-1" disabled rows="10"><?php echo escape($view->resultText); ?></textarea></li>
 			</p>
 		</div>
 
-		<div class="pure-u-1-3">
+		<div class="pure-u-1 pure-u-md-1-3">
 			<p>Crawler's HTML:<br>
 				<textarea class="pure-input-1" disabled rows="10"><?php echo escape($view->crawlerHtml); ?></textarea>
 			</p>
 		</div>
 		
 		<?php /* if the tidy html was used, show it */ if ($view->tidyCrawlerHtml) { ?>
-		<div class="pure-u-1-3">
+		<div class="pure-u-1 pure-u-md-1-3">
 			<p>Tidy Craler's HTML:<br>
 				<textarea class="pure-input-1" disabled rows="10"><?php echo escape($view->tidyCrawlerHtml); ?></textarea>
 			</p>
